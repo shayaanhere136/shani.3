@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | Smart Healthy Tiffin</title>
+  <meta name="description" content="Complete your Smart Healthy Tiffin order with delivery details and payment information." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Smart Healthy Tiffin home"><span class="brand-mark">✦</span><span>smart<span>healthy</span><b>tiffin</b></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="plans.html">Meal plans</a>
+      <a href="about.html">About</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="contact.html">Contact</a>
+      <button class="cart-button" data-open-cart aria-label="Open cart">Cart <span class="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <main class="wrap section-space checkout-layout">
+    <div class="checkout-form-panel">
+      <h1>Checkout</h1>
+      <form class="checkout-form">
+        <section>
+          <h3>Customer information</h3>
+          <div class="field-grid">
+            <label><span>Name</span><input type="text" placeholder="Full name" /></label>
+            <label><span>Phone</span><input type="tel" placeholder="03xx-xxxxxxx" /></label>
+            <label><span>Email</span><input type="email" placeholder="you@example.com" /></label>
+          </div>
+        </section>
+        <section>
+          <h3>Delivery address</h3>
+          <div class="field-grid">
+            <label><span>Area</span><input type="text" placeholder="Islamabad or Rawalpindi" /></label>
+            <label><span>Address</span><input type="text" placeholder="Street, sector or landmark" /></label>
+          </div>
+        </section>
+        <section>
+          <h3>Payment</h3>
+          <p>Available methods depend on the real payment provider and business setup.</p>
+        </section>
+      </form>
+    </div>
+
+    <aside class="summary-panel">
+      <h3>Order summary</h3>
+      <div class="summary-row"><span>Green Garden Bowl</span><strong>PKR 0</strong></div>
+      <div class="summary-row"><span>Sunrise Egg Plate</span><strong>PKR 0</strong></div>
+      <div class="summary-row"><span>Delivery</span><strong>To be confirmed</strong></div>
+      <div class="summary-row grand"><span>Total</span><strong>PKR 0</strong></div>
+      <button class="button button-dark" type="submit">Place order <span>↗</span></button>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand brand-light" href="index.html"><span class="brand-mark">✦</span><span>smart<span>healthy</span><b>tiffin</b></span></a>
+        <p>Fresh food for better days.<br>Islamabad & Rawalpindi, Pakistan.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="menu.html">Our menu</a>
+        <a href="plans.html">Meal plans</a>
+        <a href="about.html">About us</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="contact.html">Contact us</a>
+        <a href="faq.html">FAQs</a>
+        <a href="how-it-works.html">How it works</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p class="socials"><a href="#">ig</a><a href="#">f</a><a href="#">wa</a></p>
+      </div>
+    </div>
+    <div class="wrap footer-bottom"><span>© 2025 Smart Healthy Tiffin</span><span>Made with care in Pakistan</span></div>
+  </footer>
+
+  <aside class="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head"><h2>Your cart</h2><button data-close-cart aria-label="Close cart">×</button></div>
+    <div class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Subtotal</span><strong>PKR <span id="cart-total">0</span></strong></div>
+      <a class="button button-dark checkout-button" href="checkout.html">Checkout <span>↗</span></a>
+    </div>
+  </aside>
+  <div class="overlay" data-close-cart></div>
+  <script src="script.js"></script>
+</body>
+</html>

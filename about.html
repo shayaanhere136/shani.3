@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Smart Healthy Tiffin</title>
+  <meta name="description" content="Learn more about Smart Healthy Tiffin and the mission behind fresh, nutritious meals in Islamabad and Rawalpindi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Smart Healthy Tiffin home"><span class="brand-mark">✦</span><span>smart<span>healthy</span><b>tiffin</b></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="plans.html">Meal plans</a>
+      <a href="about.html">About</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="contact.html">Contact</a>
+      <button class="cart-button" data-open-cart aria-label="Open cart">Cart <span class="cart-count">0</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero subtle-bg">
+      <div class="wrap page-hero-inner">
+        <div>
+          <p class="eyebrow">Our story</p>
+          <h1>Making healthy eating <em>easier.</em></h1>
+        </div>
+        <p>Smart Healthy Tiffin exists to help people in Islamabad and Rawalpindi eat well without sacrificing convenience, freshness or taste.</p>
+      </div>
+    </section>
+
+    <section class="wrap section-space split-layout">
+      <div class="content-photo"><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=85" alt="Fresh ingredients in a kitchen" /></div>
+      <div class="content-copy">
+        <h2>Built around freshness and trust.</h2>
+        <p>We believe thoughtful food should be accessible, nourishing and easy to fit into everyday life.</p>
+        <p>From breakfast to dinner, our approach emphasizes balanced meals, seasonal ingredients and honest preparation — with no inflated claims or vague promises.</p>
+        <a class="button button-dark" href="menu.html">Explore the menu <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="wrap section-space">
+      <div class="section-heading left-align">
+        <div>
+          <p class="eyebrow">What we believe</p>
+          <h2>Values that shape every order.</h2>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><h3>Freshness</h3><p>Prepared with real ingredients and seasonal produce wherever possible.</p></article>
+        <article class="feature-card"><h3>Balanced nutrition</h3><p>Meals designed to support energy, satiety and everyday wellness.</p></article>
+        <article class="feature-card"><h3>Convenience</h3><p>Made to fit modern routines, home schedules and workdays.</p></article>
+        <article class="feature-card"><h3>Transparency</h3><p>Clear ingredient choices and nutrition information that is verified.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand brand-light" href="index.html"><span class="brand-mark">✦</span><span>smart<span>healthy</span><b>tiffin</b></span></a>
+        <p>Fresh food for better days.<br>Islamabad & Rawalpindi, Pakistan.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="menu.html">Our menu</a>
+        <a href="plans.html">Meal plans</a>
+        <a href="about.html">About us</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="contact.html">Contact us</a>
+        <a href="faq.html">FAQs</a>
+        <a href="how-it-works.html">How it works</a>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p class="socials"><a href="#">ig</a><a href="#">f</a><a href="#">wa</a></p>
+      </div>
+    </div>
+    <div class="wrap footer-bottom"><span>© 2025 Smart Healthy Tiffin</span><span>Made with care in Pakistan</span></div>
+  </footer>
+
+  <aside class="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-head"><h2>Your cart</h2><button data-close-cart aria-label="Close cart">×</button></div>
+    <div class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total"><span>Subtotal</span><strong>PKR <span id="cart-total">0</span></strong></div>
+      <a class="button button-dark checkout-button" href="checkout.html">Checkout <span>↗</span></a>
+    </div>
+  </aside>
+  <div class="overlay" data-close-cart></div>
+  <script src="script.js"></script>
+</body>
+</html>
